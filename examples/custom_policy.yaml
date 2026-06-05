@@ -1,0 +1,27 @@
+# Example custom policy rules.
+# Load via: PolicyEngine().load_rules("examples/custom_policy.yaml")
+
+rules:
+  - id: CUSTOM_LICENSE_REQUIRED
+    description: "Dataset must have a license declared."
+    severity: error
+    check: mandatory_field
+    field: license
+
+  - id: CUSTOM_NO_DRAFT_LICENSE
+    description: "Reject 'draft' or 'TBD' license values."
+    severity: error
+    check: forbid_value
+    field: license
+    forbid_values:
+      - draft
+      - TBD
+      - tbd
+      - placeholder
+
+  - id: CUSTOM_NO_INTERNAL_URL
+    description: "Public dataset descriptions must not reference internal hostnames."
+    severity: warning
+    check: regex
+    field: description
+    pattern: "(internal|intranet|localhost|127\\.0\\.0\\.1)"
