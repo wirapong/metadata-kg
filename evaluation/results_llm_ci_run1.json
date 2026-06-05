@@ -1,0 +1,79 @@
+{
+  "n_runs": 1,
+  "gold_size": 120,
+  "model": "claude-sonnet-4-20250514",
+  "floor": {
+    "f1": {
+      "title": 0.983050847457627,
+      "type": 1.0,
+      "domain": 0.0
+    }
+  },
+  "runs": [
+    {
+      "counts": {
+        "title": [
+          116,
+          4
+        ],
+        "type": [
+          111,
+          9
+        ],
+        "domain": [
+          105,
+          15
+        ]
+      },
+      "f1": {
+        "title": 0.983050847457627,
+        "type": 0.961038961038961,
+        "domain": 0.9333333333333333
+      },
+      "extras": {
+        "license_extracted": 0,
+        "publisher_extracted": 19,
+        "language_extracted": 110,
+        "keyword_count_sum": 738
+      },
+      "failures": 0,
+      "latency_mean": 2.2645775160121655,
+      "latency_p95": 3.5250648835790335,
+      "total_time": 271.74930192145985
+    }
+  ],
+  "aggregate": {
+    "per_field": {
+      "title": {
+        "mean": 0.983050847457627,
+        "stdev": 0.0,
+        "ci_95_low": 0.983050847457627,
+        "ci_95_high": 0.983050847457627,
+        "raw": [
+          0.983050847457627
+        ]
+      },
+      "type": {
+        "mean": 0.961038961038961,
+        "stdev": 0.0,
+        "ci_95_low": 0.961038961038961,
+        "ci_95_high": 0.961038961038961,
+        "raw": [
+          0.961038961038961
+        ]
+      },
+      "domain": {
+        "mean": 0.9333333333333333,
+        "stdev": 0.0,
+        "ci_95_low": 0.9333333333333333,
+        "ci_95_high": 0.9333333333333333,
+        "raw": [
+          0.9333333333333333
+        ]
+      }
+    },
+    "latency_mean_across_runs": 2.2645775160121655,
+    "failures_total": 0
+  },
+  "timestamp": "2026-06-04 19:34:13 +07"
+}

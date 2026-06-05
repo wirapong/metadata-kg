@@ -1,0 +1,73 @@
+[
+  {
+    "model_name": "Deterministic (Floor)",
+    "provider": "none",
+    "f1": {
+      "title": 0.9830508474576272,
+      "type": 1.0,
+      "domain": 0.0
+    },
+    "latency_mean": 0.0,
+    "failures": 0
+  },
+  {
+    "model_name": "Claude Sonnet 4",
+    "model_id": "claude-sonnet-4-20250514",
+    "provider": "anthropic",
+    "f1": {
+      "title": 0.9830508474576272,
+      "type": 0.961038961038961,
+      "domain": 0.9333333333333333
+    },
+    "extras": {
+      "license_extracted": 0,
+      "publisher_extracted": 19,
+      "language_extracted": 110,
+      "keyword_count_sum": 736
+    },
+    "failures": 0,
+    "latency_mean": 2.441803382667907,
+    "latency_p95": 3.4303269934083787,
+    "total_time": 293.0164059201488
+  },
+  {
+    "model_name": "Claude Opus 4",
+    "model_id": "claude-opus-4-20250514",
+    "provider": "anthropic",
+    "f1": {
+      "title": 0.9830508474576272,
+      "type": 0.961038961038961,
+      "domain": 0.9285714285714286
+    },
+    "extras": {
+      "license_extracted": 0,
+      "publisher_extracted": 34,
+      "language_extracted": 114,
+      "keyword_count_sum": 711
+    },
+    "failures": 0,
+    "latency_mean": 3.2380543912770614,
+    "latency_p95": 4.098721818131161,
+    "total_time": 388.5665269532474
+  },
+  {
+    "model_name": "GPT-4o",
+    "model_id": "gpt-4o",
+    "provider": "openai",
+    "f1": {
+      "title": 0.9830508474576272,
+      "type": 0.9565217391304348,
+      "domain": 0.9473684210526315
+    },
+    "extras": {
+      "license_extracted": 0,
+      "publisher_extracted": 10,
+      "language_extracted": 48,
+      "keyword_count_sum": 516
+    },
+    "failures": 0,
+    "latency_mean": 1.8414330114600792,
+    "latency_p95": 2.994626414636149,
+    "total_time": 220.9719613752095
+  }
+]

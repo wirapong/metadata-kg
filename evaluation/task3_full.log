@@ -1,0 +1,44 @@
+2026-06-04 20:03:48.684 | WARNING  | metadata_kg.core.llm_agent:<module>:47 - LangChain not available: cannot import name 'AgentExecutor' from 'langchain.agents' (/Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/.venv/lib/python3.11/site-packages/langchain/agents/__init__.py). Using deterministic fallback.
+Multi-model comparison on 120 docs
+
+
+=== Claude Sonnet 4 (claude-sonnet-4-20250514) ===
+  [ 20/120] avg latency 2.45s
+  [ 40/120] avg latency 2.41s
+  [ 60/120] avg latency 2.44s
+  [ 80/120] avg latency 2.43s
+  [100/120] avg latency 2.39s
+  [120/120] avg latency 2.44s
+  Final F1: title=0.983  type=0.961  domain=0.933
+  Latency mean: 2.44s  failures: 0
+
+=== Claude Opus 4 (claude-opus-4-20250514) ===
+  [ 20/120] avg latency 3.30s
+  [ 40/120] avg latency 3.23s
+  [ 60/120] avg latency 3.22s
+  [ 80/120] avg latency 3.20s
+  [100/120] avg latency 3.23s
+  [120/120] avg latency 3.24s
+  Final F1: title=0.983  type=0.961  domain=0.929
+  Latency mean: 3.24s  failures: 0
+
+=== GPT-4o (gpt-4o) ===
+  [ 20/120] avg latency 1.62s
+  [ 40/120] avg latency 1.60s
+  [ 60/120] avg latency 1.63s
+  [ 80/120] avg latency 1.70s
+  [100/120] avg latency 1.88s
+  [120/120] avg latency 1.84s
+  Final F1: title=0.983  type=0.957  domain=0.947
+  Latency mean: 1.84s  failures: 0
+
+================================================================================
+Model                       Title F1    Type F1  Domain F1  Latency (s)
+--------------------------------------------------------------------------------
+Deterministic (Floor)          0.983      1.000      0.000         0.00
+Claude Sonnet 4                0.983      0.961      0.933         2.44
+Claude Opus 4                  0.983      0.961      0.929         3.24
+GPT-4o                         0.983      0.957      0.947         1.84
+
+✓ Wrote /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_multi_model.json
+✓ Saved /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/figures/fig_multi_model.png

@@ -1,0 +1,786 @@
+{
+  "n_cases": 40,
+  "failures": 0,
+  "total_llm_time_s": 91.74,
+  "avg_latency_per_doc_s": 2.293,
+  "floor": {
+    "title": {
+      "tp": 40,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "type": {
+      "tp": 40,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "domain": {
+      "tp": 0,
+      "fn": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "ceiling": {
+    "title": {
+      "tp": 40,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "type": {
+      "tp": 36,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.9473684210526316
+    },
+    "domain": {
+      "tp": 34,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.85,
+      "f1": 0.9189189189189189
+    }
+  },
+  "delta_f1": {
+    "title": 0.0,
+    "type": -0.053,
+    "domain": 0.919
+  },
+  "ceiling_extra_fields": {
+    "license_extracted": 0,
+    "publisher_extracted": 4,
+    "language_extracted": 37,
+    "keyword_count_sum": 232
+  },
+  "per_doc_log": [
+    {
+      "i": 1,
+      "expected": {
+        "title": "COVID-19",
+        "type": "Dataset",
+        "domain": "health"
+      },
+      "predicted": {
+        "title": "Thailand COVID-19 Daily Cases 2024",
+        "type": "Dataset",
+        "domain": "health",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.888
+    },
+    {
+      "i": 2,
+      "expected": {
+        "title": "PM2.5",
+        "type": "Dataset",
+        "domain": "environment"
+      },
+      "predicted": {
+        "title": "Bangkok PM2.5 Hourly Monitoring",
+        "type": "Dataset",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 5.564
+    },
+    {
+      "i": 3,
+      "expected": {
+        "title": "Stock Exchange",
+        "type": "Dataset",
+        "domain": "finance"
+      },
+      "predicted": {
+        "title": "Thai Stock Exchange Daily Close 2024",
+        "type": "Dataset",
+        "domain": "finance",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.551
+    },
+    {
+      "i": 4,
+      "expected": {
+        "title": "Library Loan",
+        "type": "Dataset",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "KKU Library Loan Records 2024",
+        "type": "Dataset",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.962
+    },
+    {
+      "i": 5,
+      "expected": {
+        "title": "Water Quality",
+        "type": "Dataset",
+        "domain": "environment"
+      },
+      "predicted": {
+        "title": "Chao Phraya River Water Quality",
+        "type": "Dataset",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.128
+    },
+    {
+      "i": 6,
+      "expected": {
+        "title": "Election Results",
+        "type": "Dataset",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "Thailand National Election Results 2023",
+        "type": "Dataset",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.963
+    },
+    {
+      "i": 7,
+      "expected": {
+        "title": "Hospital Admissions",
+        "type": "Dataset",
+        "domain": "health"
+      },
+      "predicted": {
+        "title": "Khon Kaen Hospital Admissions",
+        "type": "Dataset",
+        "domain": "health",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.6
+    },
+    {
+      "i": 8,
+      "expected": {
+        "title": "Iris",
+        "type": "Dataset",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "Iris Flower Classification Set",
+        "type": "Dataset",
+        "domain": "other",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 1.802
+    },
+    {
+      "i": 9,
+      "expected": {
+        "title": "Rice Production",
+        "type": "Dataset",
+        "domain": "agriculture"
+      },
+      "predicted": {
+        "title": "Thailand Rice Production by Province",
+        "type": "Dataset",
+        "domain": "agriculture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.99
+    },
+    {
+      "i": 10,
+      "expected": {
+        "title": "BTS Ridership",
+        "type": "Dataset",
+        "domain": "transport"
+      },
+      "predicted": {
+        "title": "Bangkok BTS Ridership 2024",
+        "type": "Dataset",
+        "domain": "transport",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.011
+    },
+    {
+      "i": 11,
+      "expected": {
+        "title": "Climate Adaptation",
+        "type": "Text",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "Climate Adaptation Policy Brief 2024",
+        "type": "Text",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 1.956
+    },
+    {
+      "i": 12,
+      "expected": {
+        "title": "Annual Report",
+        "type": "Text",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "Annual Report KKU 2024",
+        "type": "Text",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.914
+    },
+    {
+      "i": 13,
+      "expected": {
+        "title": "Genomic Surveillance",
+        "type": "Text",
+        "domain": "health"
+      },
+      "predicted": {
+        "title": "SARS-CoV-2 Genomic Surveillance Manuscript",
+        "type": "Text",
+        "domain": "health",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.984
+    },
+    {
+      "i": 14,
+      "expected": {
+        "title": "Penal Code",
+        "type": "Text",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "Thai Penal Code Amendments 2024",
+        "type": "Text",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.934
+    },
+    {
+      "i": 15,
+      "expected": {
+        "title": "Open Banking",
+        "type": "Text",
+        "domain": "finance"
+      },
+      "predicted": {
+        "title": "Open Banking Whitepaper Thailand",
+        "type": "Text",
+        "domain": "finance",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.907
+    },
+    {
+      "i": 16,
+      "expected": {
+        "title": "Mortality Meta-Analysis",
+        "type": "Text",
+        "domain": "health"
+      },
+      "predicted": {
+        "title": "PM2.5 Mortality Meta-Analysis",
+        "type": "Text",
+        "domain": "health",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.977
+    },
+    {
+      "i": 17,
+      "expected": {
+        "title": "Rice Genome",
+        "type": "Text",
+        "domain": "agriculture"
+      },
+      "predicted": {
+        "title": "Rice Genome Sequencing Report",
+        "type": "Text",
+        "domain": "agriculture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.775
+    },
+    {
+      "i": 18,
+      "expected": {
+        "title": "Smart City",
+        "type": "Text",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "Smart City Master Plan Khon Kaen",
+        "type": "Text",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.861
+    },
+    {
+      "i": 19,
+      "expected": {
+        "title": "AI Ethics",
+        "type": "Text",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "AI Ethics Guidelines NSTDA",
+        "type": "Text",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.13
+    },
+    {
+      "i": 20,
+      "expected": {
+        "title": "Open Government",
+        "type": "Text",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "Open Government Data Best Practices",
+        "type": "Text",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.823
+    },
+    {
+      "i": 21,
+      "expected": {
+        "title": "Satellite Image",
+        "type": "StillImage",
+        "domain": "environment"
+      },
+      "predicted": {
+        "title": "Satellite Image Set Bangkok Floods 2011",
+        "type": "StillImage",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.081
+    },
+    {
+      "i": 22,
+      "expected": {
+        "title": "Folk Art",
+        "type": "StillImage",
+        "domain": "culture"
+      },
+      "predicted": {
+        "title": "Thai Folk Art Photograph Archive",
+        "type": "StillImage",
+        "domain": "culture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.935
+    },
+    {
+      "i": 23,
+      "expected": {
+        "title": "X-Ray",
+        "type": "StillImage",
+        "domain": "health"
+      },
+      "predicted": {
+        "title": "Medical X-Ray Pneumonia Dataset",
+        "type": "Dataset",
+        "domain": "health",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": false,
+      "domain_ok": true,
+      "latency_s": 2.284
+    },
+    {
+      "i": 24,
+      "expected": {
+        "title": "Rice Disease",
+        "type": "StillImage",
+        "domain": "agriculture"
+      },
+      "predicted": {
+        "title": "Rice Disease Leaf Image Set",
+        "type": "Dataset",
+        "domain": "agriculture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": false,
+      "domain_ok": true,
+      "latency_s": 1.991
+    },
+    {
+      "i": 25,
+      "expected": {
+        "title": "Historical Map",
+        "type": "StillImage",
+        "domain": "culture"
+      },
+      "predicted": {
+        "title": "Historical Map Collection Siam 1880-1932",
+        "type": "Collection",
+        "domain": "culture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": false,
+      "domain_ok": true,
+      "latency_s": 5.027
+    },
+    {
+      "i": 26,
+      "expected": {
+        "title": "PyKKU",
+        "type": "Software",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "PyKKU NLP Toolkit",
+        "type": "Software",
+        "domain": "other",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 4.509
+    },
+    {
+      "i": 27,
+      "expected": {
+        "title": "DCAT Validator",
+        "type": "Software",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "ThaiGov-DCAT Validator",
+        "type": "Software",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.973
+    },
+    {
+      "i": 28,
+      "expected": {
+        "title": "SmartFarm",
+        "type": "Software",
+        "domain": "agriculture"
+      },
+      "predicted": {
+        "title": "SmartFarm Decision App",
+        "type": "Software",
+        "domain": "agriculture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.036
+    },
+    {
+      "i": 29,
+      "expected": {
+        "title": "Air Quality Forecast",
+        "type": "Software",
+        "domain": "environment"
+      },
+      "predicted": {
+        "title": "Air Quality Forecast Service",
+        "type": "Service",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": false,
+      "domain_ok": true,
+      "latency_s": 1.72
+    },
+    {
+      "i": 30,
+      "expected": {
+        "title": "OPAC",
+        "type": "Software",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "KKU Library OPAC Source Code",
+        "type": "Software",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.719
+    },
+    {
+      "i": 31,
+      "expected": {
+        "title": "SPARQL",
+        "type": "Service",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "KKU SPARQL Endpoint",
+        "type": "Service",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 2.056
+    },
+    {
+      "i": 32,
+      "expected": {
+        "title": "Open Data Portal",
+        "type": "Service",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "NSTDA Open Data Portal API",
+        "type": "Service",
+        "domain": "other",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 1.903
+    },
+    {
+      "i": 33,
+      "expected": {
+        "title": "Citation Index",
+        "type": "Service",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "Thai Citation Index Web Service",
+        "type": "Service",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.856
+    },
+    {
+      "i": 34,
+      "expected": {
+        "title": "Loan Calculator",
+        "type": "Service",
+        "domain": "finance"
+      },
+      "predicted": {
+        "title": "BAAC Loan Calculator Service",
+        "type": "Service",
+        "domain": "agriculture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 2.094
+    },
+    {
+      "i": 35,
+      "expected": {
+        "title": "Election Live Tally",
+        "type": "Service",
+        "domain": "government"
+      },
+      "predicted": {
+        "title": "National Election Live Tally API",
+        "type": "Service",
+        "domain": "government",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.842
+    },
+    {
+      "i": 36,
+      "expected": {
+        "title": "Research Forum",
+        "type": "Event",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "KKU Annual Research Forum 2024",
+        "type": "Event",
+        "domain": "education",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 4.492
+    },
+    {
+      "i": 37,
+      "expected": {
+        "title": "Music Festival",
+        "type": "Event",
+        "domain": "culture"
+      },
+      "predicted": {
+        "title": "Bangkok Music Festival 2024",
+        "type": "Event",
+        "domain": "culture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.808
+    },
+    {
+      "i": 38,
+      "expected": {
+        "title": "AI Symposium",
+        "type": "Event",
+        "domain": "education"
+      },
+      "predicted": {
+        "title": "International AI Symposium Thailand",
+        "type": "Event",
+        "domain": "other",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": false,
+      "latency_s": 2.059
+    },
+    {
+      "i": 39,
+      "expected": {
+        "title": "Court Music",
+        "type": "Sound",
+        "domain": "culture"
+      },
+      "predicted": {
+        "title": "Thai Court Music Audio Archive",
+        "type": "Sound",
+        "domain": "culture",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.819
+    },
+    {
+      "i": 40,
+      "expected": {
+        "title": "Bioacoustics",
+        "type": "Sound",
+        "domain": "environment"
+      },
+      "predicted": {
+        "title": "Wildlife Bioacoustics Khao Yai",
+        "type": "Sound",
+        "domain": "environment",
+        "license": null
+      },
+      "title_ok": true,
+      "type_ok": true,
+      "domain_ok": true,
+      "latency_s": 1.813
+    }
+  ],
+  "model": "claude-sonnet-4-20250514"
+}

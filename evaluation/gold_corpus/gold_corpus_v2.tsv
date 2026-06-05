@@ -1,0 +1,121 @@
+doc_id	text	expected_title_substring	expected_type	expected_domain
+DOC-001	Title: Thailand COVID-19 Daily Cases 2024 \n Description: Provincial daily case counts and deaths from the Ministry of Public Health. \n Tags: covid, health, Thailand, epidemiology	COVID-19	Dataset	health
+DOC-002	Title: Bangkok PM2.5 Hourly Monitoring \n Description: Particulate matter readings from 80 air quality stations. \n Keywords: air-quality, PM25, Bangkok	PM2.5	Dataset	environment
+DOC-003	Title: Thai Stock Exchange Daily Close 2024 \n Description: SET index daily closing values and volume.	Stock Exchange	Dataset	finance
+DOC-004	Title: KKU Library Loan Records 2024 \n Description: Anonymized book circulation data from the central library.	Library Loan	Dataset	education
+DOC-005	Title: Chao Phraya River Water Quality \n Description: Monthly DO, pH, and turbidity measurements.	Water Quality	Dataset	environment
+DOC-006	Title: Thailand National Election Results 2023 \n Description: Constituency-level vote counts.	Election Results	Dataset	government
+DOC-007	Title: Khon Kaen Hospital Admissions \n Description: De-identified inpatient records with ICD-10 diagnoses.	Hospital Admissions	Dataset	health
+DOC-008	Title: Iris Flower Classification Set \n Description: 150 samples, 4 features, 3 species.	Iris	Dataset	education
+DOC-009	Title: Thailand Rice Production by Province \n Description: Yearly tonnage 2010-2024 from the Department of Agriculture.	Rice Production	Dataset	agriculture
+DOC-010	Title: Bangkok BTS Ridership 2024 \n Description: Hourly passenger counts at all 62 stations.	BTS Ridership	Dataset	transport
+DOC-011	Title: Climate Adaptation Policy Brief 2024 \n Description: An overview of Thailand's national climate adaptation framework.	Climate Adaptation	Text	government
+DOC-012	Title: Annual Report KKU 2024 \n Description: Academic and research achievements for fiscal year 2024.	Annual Report	Text	education
+DOC-013	Title: SARS-CoV-2 Genomic Surveillance Manuscript \n Description: Peer-reviewed paper on viral variants in Southeast Asia.	Genomic Surveillance	Text	health
+DOC-014	Title: Thai Penal Code Amendments 2024 \n Description: Full text of statutory changes.	Penal Code	Text	government
+DOC-015	Title: Open Banking Whitepaper Thailand \n Description: Industry consultation paper on API standards.	Open Banking	Text	finance
+DOC-016	Title: PM2.5 Mortality Meta-Analysis \n Description: Systematic review of 47 cohort studies.	Mortality Meta-Analysis	Text	health
+DOC-017	Title: Rice Genome Sequencing Report \n Description: Technical bulletin on Hom Mali genome.	Rice Genome	Text	agriculture
+DOC-018	Title: Smart City Master Plan Khon Kaen \n Description: 10-year urban development strategy.	Smart City	Text	government
+DOC-019	Title: AI Ethics Guidelines NSTDA \n Description: National framework for trustworthy AI.	AI Ethics	Text	government
+DOC-020	Title: Open Government Data Best Practices \n Description: Curated catalogue guidelines following DCAT 2.	Open Government	Text	government
+DOC-021	Title: Satellite Image Set Bangkok Floods 2011 \n Description: Sentinel-2 RGB tiles covering the 2011 flood.	Satellite Image	StillImage	environment
+DOC-022	Title: Thai Folk Art Photograph Archive \n Description: 500 high-resolution images of regional crafts.	Folk Art	StillImage	culture
+DOC-023	Title: Medical X-Ray Pneumonia Dataset \n Description: 5,000 chest radiographs labeled normal vs pneumonia.	X-Ray	StillImage	health
+DOC-024	Title: Rice Disease Leaf Image Set \n Description: 3,000 photos labeled by 4 disease classes.	Rice Disease	StillImage	agriculture
+DOC-025	Title: Historical Map Collection Siam 1880-1932 \n Description: Scanned cartographic archive.	Historical Map	StillImage	culture
+DOC-026	Title: PyKKU NLP Toolkit \n Description: Open-source Thai NLP utilities; Python 3.11.	PyKKU	Software	education
+DOC-027	Title: ThaiGov-DCAT Validator \n Description: CLI tool for DCAT 2 compliance.	DCAT Validator	Software	government
+DOC-028	Title: SmartFarm Decision App \n Description: Mobile decision-support for paddy growers.	SmartFarm	Software	agriculture
+DOC-029	Title: Air Quality Forecast Service \n Description: REST API delivering 24h PM2.5 forecasts.	Air Quality Forecast	Software	environment
+DOC-030	Title: KKU Library OPAC Source Code \n Description: Open-source online catalogue.	OPAC	Software	education
+DOC-031	Title: KKU SPARQL Endpoint \n Description: Public RDF query service for university bibliographic graphs.	SPARQL	Service	education
+DOC-032	Title: NSTDA Open Data Portal API \n Description: REST API for catalogue search.	Open Data Portal	Service	government
+DOC-033	Title: Thai Citation Index Web Service \n Description: SOAP and REST endpoints for scholarly metadata.	Citation Index	Service	education
+DOC-034	Title: BAAC Loan Calculator Service \n Description: Online calculator for agricultural loan estimates.	Loan Calculator	Service	finance
+DOC-035	Title: National Election Live Tally API \n Description: WebSocket service streaming vote counts.	Election Live Tally	Service	government
+DOC-036	Title: KKU Annual Research Forum 2024 \n Description: 3-day conference with 200 papers.	Research Forum	Event	education
+DOC-037	Title: Bangkok Music Festival 2024 \n Description: 2-week cultural event with 80 artists.	Music Festival	Event	culture
+DOC-038	Title: International AI Symposium Thailand \n Description: Hybrid conference on responsible AI.	AI Symposium	Event	education
+DOC-039	Title: Thai Court Music Audio Archive \n Description: 200 lossless recordings of Piphat ensembles.	Court Music	Sound	culture
+DOC-040	Title: Wildlife Bioacoustics Khao Yai \n Description: 1,000 hours of forest sound recordings.	Bioacoustics	Sound	environment
+DOC-041	Title: NSO Population Census 2024 \n Description: Provincial population, age, and household statistics from the National Statistical Office.	Population Census	Dataset	government
+DOC-042	Title: GISTDA Sentinel-2 Surface Reflectance \n Description: Atmospherically corrected satellite imagery over Thailand 2020-2024.	Sentinel-2	Dataset	environment
+DOC-043	Title: Thai Bond Market Daily Prices \n Description: Daily yield curves and clean prices for government and corporate bonds.	Bond Market	Dataset	finance
+DOC-044	Title: Bangkok Taxi Trajectory Dataset \n Description: Anonymized GPS traces of 5,000 taxis over one month.	Taxi Trajectory	Dataset	transport
+DOC-045	Title: Wheat Yield Prediction Features \n Description: Multispectral and weather features for yield modeling.	Wheat Yield	Dataset	agriculture
+DOC-046	Title: KKU MOOC Learning Logs \n Description: De-identified clickstream data from 12 online courses.	MOOC Learning	Dataset	education
+DOC-047	Title: ASEAN Energy Consumption 2020-2024 \n Description: Annual electricity and fossil-fuel consumption by member state.	Energy Consumption	Dataset	environment
+DOC-048	Title: Thai Restaurant Reviews Sentiment \n Description: 50,000 Wongnai reviews labeled positive/neutral/negative.	Restaurant Reviews	Dataset	culture
+DOC-049	Title: Bangkok Crime Incident Report 2023 \n Description: Geo-coded incidents from the Royal Thai Police.	Crime Incident	Dataset	government
+DOC-050	Title: Mekong River Discharge \n Description: Daily flow measurements at 12 gauging stations.	Mekong Discharge	Dataset	environment
+DOC-051	Title: Customs Import-Export Records 2024 \n Description: HS-code level trade statistics from Thai Customs.	Import-Export	Dataset	government
+DOC-052	Title: Thai Hospital Bed Capacity \n Description: ICU and ward bed counts by province during COVID surges.	Hospital Bed	Dataset	health
+DOC-053	Title: Drone-captured Rice Field Imagery \n Description: 12,000 georeferenced UAV photos with growth-stage labels.	Drone Rice	Dataset	agriculture
+DOC-054	Title: Thai Court Case Citation Network \n Description: Citation graph of Supreme Court rulings 1995-2024.	Court Case	Dataset	government
+DOC-055	Title: Bangkok Urban Tree Inventory \n Description: GPS-tagged tree species, DBH, and health status.	Urban Tree	Dataset	environment
+DOC-056	Title: KKU Research Publication Bibliography \n Description: Scopus-indexed records of all KKU outputs 2010-2024.	Research Publication	Dataset	education
+DOC-057	Title: Thai Banking Mobile Transactions \n Description: Aggregated PromptPay daily volume by region.	Mobile Transactions	Dataset	finance
+DOC-058	Title: Songkran Travel Mobility Data \n Description: Anonymized phone-tower movement during 2024 holidays.	Songkran Mobility	Dataset	transport
+DOC-059	Title: Thai Cancer Registry 2020-2024 \n Description: De-identified diagnosis and survival statistics.	Cancer Registry	Dataset	health
+DOC-060	Title: PEA Smart Meter Energy Profiles \n Description: Hourly residential consumption from 10,000 households.	Smart Meter	Dataset	environment
+DOC-061	Title: Bangkok Property Transaction Prices \n Description: Quarterly condo and house sales 2018-2024.	Property Transaction	Dataset	finance
+DOC-062	Title: Thai Tourist Arrivals by Nationality \n Description: Monthly visitor counts from immigration data.	Tourist Arrivals	Dataset	transport
+DOC-063	Title: Mekong Fish Species Survey \n Description: Multi-year biodiversity census from 30 sampling sites.	Fish Species	Dataset	environment
+DOC-064	Title: KKU Student Course Enrolment 2023 \n Description: Aggregated, anonymized registrations by faculty.	Course Enrolment	Dataset	education
+DOC-065	Title: Thai Inflation Index Components \n Description: Monthly CPI sub-indices from Bank of Thailand.	Inflation Index	Dataset	finance
+DOC-066	Title: Universal Health Coverage Whitepaper \n Description: Position paper from the National Health Security Office on UHC reform.	Universal Health Coverage	Text	health
+DOC-067	Title: Smart Agriculture Roadmap 2030 \n Description: Ministry of Agriculture strategy document for precision farming.	Smart Agriculture	Text	agriculture
+DOC-068	Title: Bangkok BMA Annual Budget Report \n Description: Fiscal year 2024 budget allocations and outturn.	BMA Annual Budget	Text	government
+DOC-069	Title: Thai Buddhist Studies Journal Vol 24 \n Description: Peer-reviewed articles on Pali canon scholarship.	Buddhist Studies	Text	culture
+DOC-070	Title: National Cyber Security Strategy \n Description: Five-year plan from the NCSA.	Cyber Security Strategy	Text	government
+DOC-071	Title: Tropical Medicine Research Bulletin \n Description: Mahidol research compilation on dengue and malaria.	Tropical Medicine	Text	health
+DOC-072	Title: Thai Cuisine Heritage Inventory \n Description: UNESCO submission documenting regional dishes.	Cuisine Heritage	Text	culture
+DOC-073	Title: Bond Market Development Plan 2024 \n Description: SEC Thailand consultation paper on retail bonds.	Bond Market Development	Text	finance
+DOC-074	Title: KKU Strategic Plan 2025-2030 \n Description: University-wide research and education roadmap.	KKU Strategic Plan	Text	education
+DOC-075	Title: Mekong Basin Sustainable Development \n Description: MRC technical brief on hydropower trade-offs.	Mekong Basin	Text	environment
+DOC-076	Title: Thai Industry 4.0 Adoption Survey \n Description: NSTDA report on manufacturing digitalization.	Industry 4.0	Text	government
+DOC-077	Title: ASEAN Connectivity Master Plan 2025 \n Description: Regional infrastructure and transport blueprint.	ASEAN Connectivity	Text	transport
+DOC-078	Title: Soft Power Diplomacy Policy Brief \n Description: Ministry of Foreign Affairs paper on cultural exports.	Soft Power	Text	culture
+DOC-079	Title: Climate Disclosure Framework Thailand \n Description: TCFD-aligned reporting guidance for listed firms.	Climate Disclosure	Text	finance
+DOC-080	Title: National Open Data Action Plan \n Description: DGA roadmap for government data publication.	Open Data Action	Text	government
+DOC-081	Title: Wat Phra Kaew Architecture Photography \n Description: 300 high-resolution architectural photos of the Grand Palace.	Wat Phra Kaew	StillImage	culture
+DOC-082	Title: Thai Beetle Species Photo Atlas \n Description: Macro photographs of 450 coleoptera species.	Beetle Species	StillImage	environment
+DOC-083	Title: Songkhla Lake Aerial Photography \n Description: Aerial survey imagery of lake ecosystem 2024.	Songkhla Lake	StillImage	environment
+DOC-084	Title: Thai Royal Coronation Photo Archive \n Description: Official photographs of the 2019 coronation ceremony.	Royal Coronation	StillImage	culture
+DOC-085	Title: Diabetic Retinopathy Fundus Images \n Description: 8,000 retinal photographs graded by ophthalmologists.	Diabetic Retinopathy	StillImage	health
+DOC-086	Title: Mango Disease Symptom Photographs \n Description: 2,500 labeled images of fungal and bacterial infections.	Mango Disease	StillImage	agriculture
+DOC-087	Title: Bangkok Streetscape Photography Project \n Description: 1,200 urban scenes documenting neighborhood change.	Streetscape	StillImage	culture
+DOC-088	Title: NASA MODIS Cloud Cover Snapshots \n Description: Daily cloud-cover imagery over Southeast Asia.	MODIS Cloud	StillImage	environment
+DOC-089	Title: Thai Handicraft Product Photography \n Description: Studio photos of OTOP textile and silverware products.	Handicraft Product	StillImage	culture
+DOC-090	Title: KKU Campus Drone Mapping Imagery \n Description: Orthorectified UAV photos of all 8 campuses.	Campus Drone	StillImage	education
+DOC-091	Title: Thai Folk Dance Performance Videos \n Description: HD recordings of 50 traditional dances across regions.	Folk Dance	MovingImage	culture
+DOC-092	Title: Surgery Training Video Library \n Description: 200 laparoscopic procedures with expert commentary.	Surgery Training	MovingImage	health
+DOC-093	Title: Bangkok Traffic Camera Footage \n Description: 24-hour CCTV feeds from 80 intersections, anonymized.	Traffic Camera	MovingImage	transport
+DOC-094	Title: Wildlife Camera-Trap Video Collection \n Description: 5,000 motion-triggered clips from Khao Yai National Park.	Camera-Trap	MovingImage	environment
+DOC-095	Title: Thai Educational Lecture Recording Archive \n Description: 1,500 recorded lectures across STEM disciplines.	Educational Lecture	MovingImage	education
+DOC-096	Title: TLite Thai Text Normalizer \n Description: Lightweight library for tokenizing and normalizing Thai script.	TLite	Software	education
+DOC-097	Title: SEAClimate Downscaling Toolkit \n Description: Python package for regional climate model downscaling.	SEAClimate	Software	environment
+DOC-098	Title: ThaiOCR Document Reader \n Description: Open-source CTC-based OCR engine optimized for Thai script.	ThaiOCR	Software	education
+DOC-099	Title: HealthRisk Mobile App \n Description: Risk-stratification application for chronic disease screening.	HealthRisk	Software	health
+DOC-100	Title: SmartHarvest Computer Vision Kit \n Description: Edge ML toolkit for tropical fruit ripeness detection.	SmartHarvest	Software	agriculture
+DOC-101	Title: BangkokGo Routing Engine \n Description: Open-source multimodal routing for Bangkok public transit.	BangkokGo	Software	transport
+DOC-102	Title: KKU Identity SSO Library \n Description: SAML 2.0 single-sign-on integration toolkit.	KKU Identity SSO	Software	education
+DOC-103	Title: Thailand National DOI Registration Service \n Description: REST API for minting DOIs for Thai research outputs.	DOI Registration	Service	education
+DOC-104	Title: Air4Thai Real-time AQI Web Service \n Description: SOAP and REST endpoints serving Pollution Control Department air-quality data.	Air4Thai	Service	environment
+DOC-105	Title: ThaiID Verification API \n Description: Government identity verification service for KYC integration.	ThaiID Verification	Service	government
+DOC-106	Title: SET Realtime Quote Streaming \n Description: WebSocket feed of Stock Exchange of Thailand tick data.	SET Realtime	Service	finance
+DOC-107	Title: Telemedicine Consultation Platform \n Description: HIPAA-compliant video consultation service for rural clinics.	Telemedicine	Service	health
+DOC-108	Title: AgriMarket Price Lookup Service \n Description: REST API delivering daily wholesale produce prices.	AgriMarket	Service	agriculture
+DOC-109	Title: TM30 Foreign Resident Reporting Service \n Description: Immigration Bureau API for landlord reporting requirements.	TM30 Reporting	Service	government
+DOC-110	Title: Royal Ploughing Ceremony 2024 \n Description: Annual government ceremony marking the rice planting season.	Ploughing Ceremony	Event	culture
+DOC-111	Title: Thailand National Software Contest 2024 \n Description: Three-month nationwide coding competition with 2,000 teams.	Software Contest	Event	education
+DOC-112	Title: Loy Krathong Festival Bangkok \n Description: City-wide cultural festival on the night of the full moon.	Loy Krathong	Event	culture
+DOC-113	Title: Bangkok International Film Festival \n Description: Two-week film showcase with 150 international titles.	International Film Festival	Event	culture
+DOC-114	Title: Asia Bio Innovation Summit Bangkok \n Description: Industry-academic conference on biotech commercialization.	Bio Innovation Summit	Event	education
+DOC-115	Title: Thai Language Pronunciation Audio Reference \n Description: 5,000 native-speaker recordings for phonetics research.	Pronunciation Audio	Sound	education
+DOC-116	Title: ASEAN Underwater Acoustics Recordings \n Description: Reef soundscape recordings from 12 dive sites.	Underwater Acoustics	Sound	environment
+DOC-117	Title: KKU Special Collections Manuscripts \n Description: A curated collection of palm-leaf manuscripts and rare books.	Special Collections	Collection	culture
+DOC-118	Title: National Archives Digital Collection 2024 \n Description: Aggregated digitized records from royal archives, military files, and cabinet papers.	Archives Digital Collection	Collection	government
+DOC-119	Title: Thailand National Statistics Dashboard \n Description: Interactive web dashboard for exploring NSO indicators.	Statistics Dashboard	InteractiveResource	government
+DOC-120	Title: KKU Virtual Anatomy Lab \n Description: WebGL-based interactive 3D anatomy learning platform.	Virtual Anatomy	InteractiveResource	education

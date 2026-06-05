@@ -1,0 +1,147 @@
+{
+  "n_runs": 3,
+  "gold_size": 120,
+  "model": "claude-sonnet-4-20250514",
+  "floor": {
+    "f1": {
+      "title": 0.983050847457627,
+      "type": 1.0,
+      "domain": 0.0
+    }
+  },
+  "runs": [
+    {
+      "counts": {
+        "title": [
+          116,
+          4
+        ],
+        "type": [
+          110,
+          10
+        ],
+        "domain": [
+          105,
+          15
+        ]
+      },
+      "f1": {
+        "title": 0.983050847457627,
+        "type": 0.9565217391304348,
+        "domain": 0.9333333333333333
+      },
+      "extras": {
+        "license_extracted": 0,
+        "publisher_extracted": 19,
+        "language_extracted": 114,
+        "keyword_count_sum": 736
+      },
+      "failures": 0,
+      "latency_mean": 2.340038289245179,
+      "latency_p95": 3.1791581558762116,
+      "total_time": 280.8045947094215
+    },
+    {
+      "counts": {
+        "title": [
+          116,
+          4
+        ],
+        "type": [
+          111,
+          9
+        ],
+        "domain": [
+          105,
+          15
+        ]
+      },
+      "f1": {
+        "title": 0.983050847457627,
+        "type": 0.961038961038961,
+        "domain": 0.9333333333333333
+      },
+      "extras": {
+        "license_extracted": 0,
+        "publisher_extracted": 19,
+        "language_extracted": 112,
+        "keyword_count_sum": 735
+      },
+      "failures": 0,
+      "latency_mean": 2.278349058686096,
+      "latency_p95": 3.1543494107725563,
+      "total_time": 273.4018870423315
+    },
+    {
+      "counts": {
+        "title": [
+          116,
+          4
+        ],
+        "type": [
+          110,
+          10
+        ],
+        "domain": [
+          105,
+          15
+        ]
+      },
+      "f1": {
+        "title": 0.983050847457627,
+        "type": 0.9565217391304348,
+        "domain": 0.9333333333333333
+      },
+      "extras": {
+        "license_extracted": 0,
+        "publisher_extracted": 19,
+        "language_extracted": 113,
+        "keyword_count_sum": 730
+      },
+      "failures": 0,
+      "latency_mean": 2.723700382281095,
+      "latency_p95": 6.011796091363066,
+      "total_time": 326.8440458737314
+    }
+  ],
+  "aggregate": {
+    "per_field": {
+      "title": {
+        "mean": 0.983050847457627,
+        "stdev": 0.0,
+        "ci_95_low": 0.983050847457627,
+        "ci_95_high": 0.983050847457627,
+        "raw": [
+          0.983050847457627,
+          0.983050847457627,
+          0.983050847457627
+        ]
+      },
+      "type": {
+        "mean": 0.9580274797666103,
+        "stdev": 0.0021294388290955496,
+        "ci_95_low": 0.9565217391304349,
+        "ci_95_high": 0.961038961038961,
+        "raw": [
+          0.9565217391304348,
+          0.961038961038961,
+          0.9565217391304348
+        ]
+      },
+      "domain": {
+        "mean": 0.9333333333333332,
+        "stdev": 0.0,
+        "ci_95_low": 0.9333333333333332,
+        "ci_95_high": 0.9333333333333332,
+        "raw": [
+          0.9333333333333333,
+          0.9333333333333333,
+          0.9333333333333333
+        ]
+      }
+    },
+    "latency_mean_across_runs": 2.4473625767374565,
+    "failures_total": 0
+  },
+  "timestamp": "2026-06-04 20:03:27 +07"
+}

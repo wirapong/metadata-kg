@@ -1,0 +1,99 @@
+2026-06-04 20:30:48.797 | WARNING  | metadata_kg.core.llm_agent:<module>:47 - LangChain not available: cannot import name 'AgentExecutor' from 'langchain.agents' (/Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/.venv/lib/python3.11/site-packages/langchain/agents/__init__.py). Using deterministic fallback.
+=== Multi-model × 3-run CI evaluation ===
+Gold set: 120 docs (v2)
+
+Floor baseline (1 pass):
+  title      F1 = 0.983
+  type       F1 = 1.000
+  domain     F1 = 0.000
+
+=== Claude Sonnet 4 (claude-sonnet-4-20250514) — 3 runs ===
+
+Run 1/3:
+  [ 30/120] avg 2.51s/doc
+  [ 60/120] avg 2.46s/doc
+  [ 90/120] avg 2.39s/doc
+  [120/120] avg 2.35s/doc
+  → title=0.983  type=0.961  domain=0.933  failures=0  wall=282s
+
+Run 2/3:
+  [ 30/120] avg 2.37s/doc
+  [ 60/120] avg 2.32s/doc
+  [ 90/120] avg 2.33s/doc
+  [120/120] avg 2.32s/doc
+  → title=0.983  type=0.957  domain=0.933  failures=0  wall=279s
+
+Run 3/3:
+  [ 30/120] avg 2.25s/doc
+  [ 60/120] avg 2.43s/doc
+  [ 90/120] avg 2.43s/doc
+  [120/120] avg 2.39s/doc
+  → title=0.983  type=0.957  domain=0.933  failures=0  wall=287s
+
+  Aggregate (n=3):
+    title      mean=0.983 ±0.000  95%CI=[0.983, 0.983]
+    type       mean=0.958 ±0.002  95%CI=[0.957, 0.961]
+    domain     mean=0.933 ±0.000  95%CI=[0.933, 0.933]
+  ✓ Intermediate save: /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_multi_ci.json
+
+=== Claude Opus 4 (claude-opus-4-20250514) — 3 runs ===
+
+Run 1/3:
+  [ 30/120] avg 3.20s/doc
+  [ 60/120] avg 3.22s/doc
+  [ 90/120] avg 3.20s/doc
+  [120/120] avg 3.20s/doc
+  → title=0.983  type=0.957  domain=0.929  failures=0  wall=384s
+
+Run 2/3:
+  [ 30/120] avg 3.36s/doc
+  [ 60/120] avg 3.31s/doc
+  [ 90/120] avg 3.31s/doc
+  [120/120] avg 3.33s/doc
+  → title=0.983  type=0.957  domain=0.929  failures=0  wall=400s
+
+Run 3/3:
+  [ 30/120] avg 3.14s/doc
+  [ 60/120] avg 3.29s/doc
+  [ 90/120] avg 3.27s/doc
+  [120/120] avg 3.29s/doc
+  → title=0.983  type=0.961  domain=0.924  failures=0  wall=395s
+
+  Aggregate (n=3):
+    title      mean=0.983 ±0.000  95%CI=[0.983, 0.983]
+    type       mean=0.958 ±0.002  95%CI=[0.957, 0.961]
+    domain     mean=0.927 ±0.002  95%CI=[0.924, 0.929]
+  ✓ Intermediate save: /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_multi_ci.json
+
+=== GPT-4o (gpt-4o) — 3 runs ===
+
+Run 1/3:
+  [ 30/120] avg 2.94s/doc
+  [ 60/120] avg 2.26s/doc
+  [ 90/120] avg 2.01s/doc
+  [120/120] avg 1.88s/doc
+  → title=0.983  type=0.957  domain=0.952  failures=0  wall=226s
+
+Run 2/3:
+  [ 30/120] avg 1.74s/doc
+  [ 60/120] avg 1.57s/doc
+  [ 90/120] avg 1.58s/doc
+  [120/120] avg 1.59s/doc
+  → title=0.983  type=0.957  domain=0.943  failures=0  wall=191s
+
+Run 3/3:
+  [ 30/120] avg 1.42s/doc
+  [ 60/120] avg 1.45s/doc
+  [ 90/120] avg 1.47s/doc
+  [120/120] avg 1.45s/doc
+  → title=0.983  type=0.957  domain=0.952  failures=0  wall=175s
+
+  Aggregate (n=3):
+    title      mean=0.983 ±0.000  95%CI=[0.983, 0.983]
+    type       mean=0.957 ±0.000  95%CI=[0.957, 0.957]
+    domain     mean=0.949 ±0.004  95%CI=[0.943, 0.952]
+  ✓ Intermediate save: /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_multi_ci.json
+  ✓ Plot: /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/figures/fig_multi_ci.png
+  ✓ Markdown: /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/RESULTS_MULTI_CI.md
+
+✓ Done — wrote /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_multi_ci.json

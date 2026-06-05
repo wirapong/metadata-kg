@@ -1,0 +1,345 @@
+{
+  "E1_extraction": {
+    "n_cases": 40,
+    "title": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 40,
+      "fn": 0
+    },
+    "type": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 40,
+      "fn": 0
+    },
+    "domain_indicator": {
+      "precision": 1.0,
+      "recall": 0.075,
+      "f1": 0.13953488372093023
+    },
+    "confidence_mean": 0.6,
+    "confidence_stdev": 0.0
+  },
+  "E2_search": {
+    "keyword": {
+      "P@k": {
+        "1": 0.95,
+        "3": 0.4666666666666666,
+        "5": 0.3,
+        "10": 0.155
+      },
+      "Recall@k": {
+        "1": 0.7125,
+        "3": 0.8791666666666667,
+        "5": 0.9166666666666666,
+        "10": 0.9333333333333333
+      },
+      "MRR@10": 0.95,
+      "nDCG@10": 0.9243392043261857,
+      "latency_ms": {
+        "mean": 0.07971044396981597,
+        "p50": 0.06854149978607893,
+        "p95": 0.11717943707481031
+      },
+      "n_queries": 20
+    },
+    "semantic": {
+      "P@k": {
+        "1": 0.8,
+        "3": 0.4333333333333333,
+        "5": 0.3,
+        "10": 0.155
+      },
+      "Recall@k": {
+        "1": 0.6208333333333333,
+        "3": 0.8458333333333334,
+        "5": 0.9166666666666666,
+        "10": 0.9333333333333333
+      },
+      "MRR@10": 0.875,
+      "nDCG@10": 0.8729014023315441,
+      "latency_ms": {
+        "mean": 0.07962289964780211,
+        "p50": 0.045458495151251554,
+        "p95": 0.1121791603509341
+      },
+      "n_queries": 20
+    },
+    "hybrid": {
+      "P@k": {
+        "1": 0.95,
+        "3": 0.4666666666666666,
+        "5": 0.31,
+        "10": 0.155
+      },
+      "Recall@k": {
+        "1": 0.7125,
+        "3": 0.8875,
+        "5": 0.9333333333333333,
+        "10": 0.9333333333333333
+      },
+      "MRR@10": 0.95,
+      "nDCG@10": 0.9198143766195583,
+      "latency_ms": {
+        "mean": 0.244562653824687,
+        "p50": 0.18372898921370506,
+        "p95": 0.2995750168338425
+      },
+      "n_queries": 20
+    }
+  },
+  "E3_pii_detection": {
+    "n": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "per_case": [
+      {
+        "text": "Contact me at wirach@kku.ac.th for details",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "email"
+        ],
+        "kind": "email"
+      },
+      {
+        "text": "Reach out: alice.smith+test@example.co.th",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "email"
+        ],
+        "kind": "email"
+      },
+      {
+        "text": "Phone: 081-234-5678",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "phone"
+        ],
+        "kind": "phone"
+      },
+      {
+        "text": "Call (02) 123-4567 anytime",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "phone"
+        ],
+        "kind": "phone"
+      },
+      {
+        "text": "My credit card 4111 1111 1111 1111 is expired",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "phone",
+          "credit_card"
+        ],
+        "kind": "credit_card"
+      },
+      {
+        "text": "SSN 123-45-6789 for verification",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "us_ssn"
+        ],
+        "kind": "us_ssn"
+      },
+      {
+        "text": "Thai ID 1 2345 67890 12 3",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "thai_national_id"
+        ],
+        "kind": "thai_national_id"
+      },
+      {
+        "text": "Mixed: email a@b.co and phone 089-111-2222",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "email",
+          "phone"
+        ],
+        "kind": "email_phone"
+      },
+      {
+        "text": "Email: support@gov.th, urgent matter",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "email"
+        ],
+        "kind": "email"
+      },
+      {
+        "text": "Patient phone 02-555-1234 confirmed",
+        "label": true,
+        "pred": true,
+        "categories": [
+          "phone"
+        ],
+        "kind": "phone"
+      },
+      {
+        "text": "Open dataset of air quality measurements",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Annual report from Department of Agriculture",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Iris flower dataset 150 samples 4 features",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Bangkok rainfall hourly measurements",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Thai folk art photograph archive",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Open source NLP toolkit for Thai language",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Satellite imagery from Sentinel-2 mission",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "DCAT 2 metadata catalogue endpoint",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Vote tally for general election 2024",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      },
+      {
+        "text": "Wildlife bioacoustics recordings Khao Yai",
+        "label": false,
+        "pred": false,
+        "categories": [],
+        "kind": "clean"
+      }
+    ]
+  },
+  "E4_kg_validation": {
+    "expected_rules": [
+      "DCAT_MANDATORY_FIELD",
+      "MULTIPLE_TYPES",
+      "DANGLING_REFERENCE"
+    ],
+    "detected_rules": [
+      "DCAT_MANDATORY_FIELD",
+      "DANGLING_REFERENCE"
+    ],
+    "coverage": 0.6666666666666666,
+    "rule_counts": {
+      "DCAT_MANDATORY_FIELD": 1,
+      "DANGLING_REFERENCE": 1
+    },
+    "total_conflicts": 2
+  },
+  "E5_lifecycle": {
+    "actions_recorded": [
+      "creation",
+      "update",
+      "archive"
+    ],
+    "required_transitions_present": true,
+    "gdpr_purge_removes_entity": true,
+    "events_total": 4,
+    "phases_passed": 3
+  },
+  "E6_scalability": {
+    "sizes": [
+      10,
+      50,
+      100,
+      250,
+      500,
+      1000
+    ],
+    "ingest_ms": [
+      0.4782499745488167,
+      2.028041984885931,
+      3.758333041332662,
+      10.335333063267171,
+      18.734999932348728,
+      37.25679195486009
+    ],
+    "search_ms_per_query": [
+      0.04670419730246067,
+      0.08074999786913395,
+      0.08917080122046173,
+      0.11920414981432259,
+      0.17036459757946432,
+      0.25023960042744875
+    ],
+    "throughput_entities_per_sec_at_N1000": 26840.74359412342
+  },
+  "E7_code_quality": {
+    "files": 27,
+    "loc_executable": 2539,
+    "loc_blank": 603,
+    "loc_comments": 234,
+    "comment_ratio": 0.09216226860968886,
+    "cyclomatic_proxy_total": 436,
+    "avg_cyclomatic_per_file": 16.14814814814815
+  },
+  "E8_reproducibility": {
+    "extraction_title_stable": true,
+    "extraction_description_stable": true,
+    "extraction_keywords_stable": true,
+    "search_ranking_stable": true,
+    "fully_reproducible": true
+  },
+  "meta": {
+    "timestamp": "2026-06-04 16:15:01 +07",
+    "python": "3.11.15",
+    "deterministic_seed": 42
+  }
+}

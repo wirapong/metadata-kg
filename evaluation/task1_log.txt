@@ -1,0 +1,27 @@
+✓ LLM mode: model=claude-sonnet-4-20250514
+✓ Gold set: 120 docs (v2)
+✓ Runs: 1
+
+=== Floor (deterministic, 1 pass) ===
+  title       F1 = 0.983
+  type        F1 = 1.000
+  domain      F1 = 0.000
+
+=== Ceiling Run 1/1 ===
+  [ 20/120] running... (avg 2.72s/doc)
+  [ 40/120] running... (avg 2.34s/doc)
+  [ 60/120] running... (avg 2.31s/doc)
+  [ 80/120] running... (avg 2.30s/doc)
+  [100/120] running... (avg 2.28s/doc)
+  [120/120] running... (avg 2.26s/doc)
+  Run 1 F1: title=0.983  type=0.961  domain=0.933
+  Failures: 0  Avg latency: 2.26s
+
+=== Aggregate (across runs) ===
+  Field       Mean F1     ± Stdev    95% CI
+  title       0.983     ± 0.000    [0.983, 0.983]
+  type        0.961     ± 0.000    [0.961, 0.961]
+  domain      0.933     ± 0.000    [0.933, 0.933]
+
+✓ Wrote /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/results_llm_ci.json
+✓ Saved /Volumes/Backup-1/Google Drive/OpenClawMacMini/graph_rag-V4/evaluation/figures/fig_e1_ci.png
